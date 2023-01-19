@@ -1,13 +1,16 @@
 {
-    "compilerOptions": {
-      "strict": true,
-      "target": "ESNext",
-      "module": "ESNext",
-      "moduleResolution": "Node",
-      "allowSyntheticDefaultImports": true,
-      "esModuleInterop": true,
-      "types": ["vite/client"],
-      "noEmit": false,
-      "isolatedModules": true
-    }
+  "compilerOptions": {
+    "target": "ESNext", 
+    "experimentalDecorators": true, 
+    "emitDecoratorMetadata": true, 
+    "module": "commonjs",
+    "rootDir": "./src", 
+    "outDir": "./dist", 
+    "removeComments": true, 
+    "esModuleInterop": true, 
+    "forceConsistentCasingInFileNames": true, 
+    "strict": true, 
+    "resolveJsonModule": true,
+    "skipLibCheck": true 
+  }
 }
