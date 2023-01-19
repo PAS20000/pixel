@@ -7,14 +7,12 @@ Pixel is a library for using indexedDb in the background of a Google Chrome exte
 Use the package manager npm to install Pixel.
 
 ```bash
-npm install pixel
+npm i pixel-idb
 ```
 
 ## Usage
 
 ```javascript
-import Pixel from 'Pixel'
-
 // create client
 const client = new Pixel({
         dbName : 'User_DB',
