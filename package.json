@@ -1,17 +1,25 @@
 {
   "name": "pixel-idb",
-  "version": "1.0.21",
+  "version": "1.0.22",
   "description": "Pixel is a library for using indexedDb in the background of a Google Chrome extension and in other scenarios it is also possible to use it.",
-  "main": "dist/pixel.js",
+  "main": "src/pixel.ts",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build" : "tsc"
+    "build": "tsc"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/PAS20000/pixel.git"
   },
-  "keywords": ["indexedDb", "extension", "brasil", "indexedDb for chrome extension", "idb", "chrome extension", "promise"],
+  "keywords": [
+    "indexedDb",
+    "extension",
+    "brasil",
+    "indexedDb for chrome extension",
+    "idb",
+    "chrome extension",
+    "promise"
+  ],
   "author": "pas2000",
   "license": "MIT",
   "bugs": {

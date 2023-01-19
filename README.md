@@ -13,6 +13,7 @@ npm i pixel-idb
 ## Usage
 
 ```javascript
+import Pixel from 'pixel-idb'
 // create client
 const client = new Pixel({
         dbName : 'User_DB',
