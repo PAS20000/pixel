@@ -4,7 +4,6 @@ import { CreateUseCasePut } from "../interfaces/pixel-use-case-put"
 const UseCasePut : CreateUseCasePut = async ({ store, item, cache }) => new Promise(
     (resolve : (value : any) => void, reject) => {
         const req = store.put(item)
-
         req.onsuccess = () => {
             const result = req.result
             cache.push(result)

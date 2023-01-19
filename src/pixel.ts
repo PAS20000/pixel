@@ -3,6 +3,7 @@ import PixelStartError from "./builders/errors/pixel-start";
 import PixelTransactionError from "./builders/errors/pixel-transaction";
 import { CoonectResponse, CreatePixelClient, PixelClientRequest } from "./builders/interfaces/pixel-client";
 import UseCaseAdd from "./builders/usecases/add";
+import UseCasePut from "./builders/usecases/put";
 import UseCaseRead from "./builders/usecases/read";
 
 class Pixel implements CreatePixelClient {
@@ -69,7 +70,7 @@ class Pixel implements CreatePixelClient {
                     resolve({
                         idbStore : store,
                         add : (item) => UseCaseAdd({ store, item, cache }),
-                        put : (item) => UseCaseAdd({ store, item, cache }),
+                        put : (item) => UseCasePut({ store, item, cache }),
                         read : () => UseCaseRead({ store, cache }),
                         deleteAll : () => store.clear(),
                         bulkDelete : (items) => {
