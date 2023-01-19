@@ -1,0 +1,13 @@
+{
+    "compilerOptions": {
+      "strict": true,
+      "target": "ESNext",
+      "module": "ESNext",
+      "moduleResolution": "Node",
+      "allowSyntheticDefaultImports": true,
+      "esModuleInterop": true,
+      "types": ["vite/client"],
+      "noEmit": false,
+      "isolatedModules": true
+    }
+}
