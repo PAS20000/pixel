@@ -41,7 +41,7 @@ const put = async ({ id, name, email, age }) => await store().put({ id, name, em
 const bulkDelete = async (arrayId) => await store().bulkDelete(arrayId)
 
 // readAll
-const readAll = async () => await store.read().all()
+const readAll = async () => await store().read().all()
 
 // deleteAll will clean the database
 const deleteAll = async () => await store().deleteAll()
