@@ -7,7 +7,7 @@ Pixel is a library for using indexedDb in the background of a Google Chrome exte
 Use the package manager npm to install Pixel.
 
 ```bash
-npm install foobar
+npm install pixel
 ```
 
 ## Usage
