@@ -67,6 +67,7 @@ class Pixel implements CreatePixelClient {
                     const store = getStore(db)
                     
                     resolve({
+                        idbStore : store,
                         add : (item) => UseCaseAdd({ store, item, cache }),
                         put : (item) => UseCaseAdd({ store, item, cache }),
                         read : () => UseCaseRead({ store, cache }),

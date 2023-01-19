@@ -31,6 +31,9 @@ const client = new Pixel({
 // connect client and create store
 const store = async () => await client.connect()
 
+// this idbStore supports the same functions as indexedDb
+const idbStore = async () => await store().idbStore
+
 // add will create a new record, if there is a field with a duplicate unique value the transaction will give an error
 const add = async ({ id, name, email, age }) => await store().add({ id, name, email, age })
 

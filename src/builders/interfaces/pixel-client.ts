@@ -14,6 +14,7 @@ export interface PixelClientRequest {
 }
 
 export type CoonectResponse = {
+    idbStore : IDBObjectStore
     add(item : object) : UseCaseAddResponse
     put(item : object) : UseCasePutResponse
     read() : UseCaseReadResponse
