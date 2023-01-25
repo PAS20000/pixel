@@ -12,7 +12,7 @@ class Pixel implements CreatePixelClient {
     ) {}
 
     public connect() {
-        const cache = [] as any[]
+        let cache = [] as any[]
         if (!!indexedDB) {
             const dbName =  this.request.dbName
             const keyPath = this.request.keyPath
@@ -76,6 +76,7 @@ class Pixel implements CreatePixelClient {
                         bulkDelete : (items) => {
                             for (const id of items) {
                                 store.delete(id)
+                                cache = cache.filter(Id => Id !== id)
                             }
                         }
                     })
