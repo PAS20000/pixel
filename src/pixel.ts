@@ -1,7 +1,7 @@
 import BrowserDoesNotSupportPixelError from "./builders/errors/browser-does-not-support-pixel";
 import PixelStartError from "./builders/errors/pixel-start";
 import PixelTransactionError from "./builders/errors/pixel-transaction";
-import { CoonectResponse, CreatePixelClient, PixelClientRequest } from "./builders/interfaces/pixel-client";
+import { CoonectResponse, CreatePixelClient, PixelClientRequest } from "./builders/interfaces";
 import UseCaseAdd from "./builders/usecases/add";
 import UseCasePut from "./builders/usecases/put";
 import UseCaseRead from "./builders/usecases/read";

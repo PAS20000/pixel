@@ -1,5 +1,5 @@
 import RequestError from "../errors/pixel-request"
-import { CreateUseCaseAdd } from "../interfaces/pixel-use-case-add"
+import { CreateUseCaseAdd } from "../interfaces"
 
 const UseCaseAdd : CreateUseCaseAdd = async ({ store, item, cache }) => new Promise(
     (resolve : (value : any) => void, reject) => {

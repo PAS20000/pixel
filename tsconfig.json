@@ -12,5 +12,9 @@
     "strict": true, 
     "resolveJsonModule": true,
     "skipLibCheck": true 
-  }
+  },
+  "include": [
+    "src/**/*"
+  ],
+  
 }

@@ -1,5 +1,5 @@
 import RequestError from "../errors/pixel-request"
-import { CreateUseCaseRead } from "../interfaces/pixel-use-case-read"
+import { CreateUseCaseRead } from "../interfaces"
 
 const UseCaseRead : CreateUseCaseRead = ({ store, cache }) => {
     
