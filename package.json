@@ -3,7 +3,7 @@
   "version": "1.0.28",
   "description": "Pixel is a library for using indexedDb in the background of a Google Chrome extension and in other scenarios it is also possible to use it.",
   "main": "dist/pixel.js",
-  "types" : "dist/index.d.ts",
+  "types" : "dist/pixel.d.ts",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "tsc --declaration"
