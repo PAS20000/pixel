@@ -57,7 +57,7 @@ class Pixel {
                     const db = request.result;
                     const store = getStore(db);
                     resolve({
-                        idbStore: store,
+                        idbStore: () => store,
                         add: (item) => (0, add_1.default)({ store, item, cache }),
                         put: (item) => (0, put_1.default)({ store, item, cache }),
                         read: () => (0, read_1.default)({ store, cache }),

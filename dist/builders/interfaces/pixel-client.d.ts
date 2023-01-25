@@ -11,7 +11,7 @@ export interface PixelClientRequest {
     permission?: IDBTransactionMode;
 }
 export declare type CoonectResponse = {
-    idbStore: IDBObjectStore;
+    idbStore: () => IDBObjectStore;
     add(item: object): UseCaseAddResponse;
     put(item: object): UseCasePutResponse;
     read(): UseCaseReadResponse;
