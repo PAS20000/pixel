@@ -1,20 +1,15 @@
 {
   "compilerOptions": {
-    "target": "ESNext", 
-    "experimentalDecorators": true, 
-    "emitDecoratorMetadata": true, 
+    "target": "ESNext",
     "module": "commonjs",
-    "rootDir": "./src", 
-    "outDir": "./dist", 
-    "removeComments": true, 
-    "esModuleInterop": true, 
-    "forceConsistentCasingInFileNames": true, 
-    "strict": true, 
-    "resolveJsonModule": true,
-    "skipLibCheck": true 
+    "outDir": "./dist",
+    "strict": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noImplicitReturns": true,
+    "noFallthroughCasesInSwitch": true,
+    "esModuleInterop": true
   },
-  "include": [
-    "src/**/*"
-  ],
-  
+  "include": ["src/**/*"],
+  "exclude": ["node_modules", "**/*.test.ts"]
 }
